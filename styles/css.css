@@ -1,14 +1,24 @@
+body{
+    width: 1440px;
+    margin-left: auto;
+  margin-right: auto;
+}
+header{
+    height: 100px;
+    padding: relative;
+}
 .logo {
     text-decoration: none;
     font-style: normal;
     font-family: Inter;
-    width: 700px;
     font-size: 24px;
     line-height: 28.8px;
     display: flex;
     align-items: center;
     letter-spacing: -0.03em;
     color: #080305;
+    margin-left: 120px;
+    margin-right: 671px;
 }
 
 .butt {
@@ -24,26 +34,6 @@ li {
     list-style-type: none;
 }
 
-.forr {
-    text-decoration: none;
-    padding: 14px 32px 14px 32px;
-    gap: 10px;
-    border-radius: 100px 0px 0px 0px;
-    opacity: 0px;
-    color: #121212;
-    width: 105px;
-    height: 22px;
-    gap: 0px;
-    opacity: 0px;
-    font-family: Inter;
-    font-size: 16px;
-    font-weight: 600;
-    line-height: 22.4px;
-    letter-spacing: -0.02em;
-    text-align: left;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
-}
 
 .sing {
     background-color: #3D1EDD;
@@ -54,7 +44,7 @@ li {
     border: 0px;
     padding: 14px 43px 14px 43px;
     letter-spacing: -0.02em;
-
+    margin-right: 16px;
 }
 
 .log {
@@ -68,5 +58,22 @@ li {
     color: #121212;
     letter-spacing: -0.02em;
     text-align: left;
-
+}
+.logs {
+    width: 145px;
+    height: 50px;
+    border-style: solid;
+    border: 0px;
+    background-color: white;
+    padding: 14px 20px 14px 20px;
+    color: #121212;
+    letter-spacing: -0.02em;
+    text-align: left;
+    margin-right: 16px;
+}
+.first_block{
+    width: 967px;
+    height: 369px;
+    margin-left: auto;
+    margin-right: auto;
 }
