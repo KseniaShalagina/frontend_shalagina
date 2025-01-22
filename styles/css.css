@@ -246,6 +246,25 @@ footer {
     text-align: center;
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
-color:  #707070;
+    color: #707070;
 
+}
+
+.name_blok {
+    font-family: Inter;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 48px;
+    letter-spacing: -0.03em;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+}
+
+.fon {
+    background-color: black;
+    width: 1440px;
+    height: 267px;
+    gap: 0px;
+    opacity: 0px;
 }
