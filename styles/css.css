@@ -298,10 +298,12 @@ footer {
     height: 100%;
     z-index: -1;
 }
-.third_blok{
+
+.third_blok {
     margin-top: 150px;
     margin-bottom: 100px;
 }
+
 .background {
     z-index: -1;
     background: radial-gradient(106.43% 106.43% at -2.18% 95.7%, #4B33D1 0%, #6A4EFF 100%);
@@ -312,5 +314,80 @@ footer {
     opacity: 0px;
     margin-left: 120px;
     margin-right: 120px;
+    z-index: -1;
+}
 
+.big_card_inf {
+    width: 619px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px 20px 0 20px;
+    background-color: white;
+}
+
+.ava {
+    margin-left: 0px;
+}
+
+.name_girl {
+    text-decoration-color: #121212;
+    font-family: Inter;
+    font-size: 21.14px;
+    font-weight: 700;
+    line-height: 29.6px;
+    letter-spacing: -0.03em;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    margin-top: 13px;
+    margin-bottom: 0;
+}
+
+.work {
+    font-family: Inter;
+    font-weight: 400;
+    line-height: 15.85px;
+    letter-spacing: -0.02em;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    margin-top: 6.61px;
+}
+
+li {
+    display: inline;
+}
+
+.about, .design {
+    display: flex;
+    flex-direction: row;
+    font-family: Inter;
+    font-weight: 400;
+    line-height: 13.87px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+
+}
+
+.about_girl {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    text-align: center;
+}
+
+.design_li {
+    padding: 0;
+    margin: 0;
+}
+.works::before {
+    content: "•"; 
+    margin-right: 5.84px; 
+  }
+  .maps{
+    margin-right: 6.61px;
+  }
+.design{
+    
 }
