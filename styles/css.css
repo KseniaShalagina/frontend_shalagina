@@ -315,18 +315,31 @@ footer {
     margin-left: 120px;
     margin-right: 120px;
     z-index: -1;
+    
 }
-
+.backgroundd{
+    position: relative;
+}
 .big_card_inf {
     width: 619px;
     margin-left: auto;
     margin-right: auto;
     padding: 20px 20px 0 20px;
     background-color: white;
+    position: absolute;
+    top:86px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
-.ava {
+.avas {
     margin-left: 0px;
+    width: 59.46px;
+    height: 59.46px;
+    gap: 0px;
+    opacity: 0px;
+    display: block;
 }
 
 .name_girl {
@@ -375,6 +388,7 @@ li {
     flex-direction: row;
     align-items: flex-start;
     text-align: center;
+    justify-content: space-between;
 }
 
 .design_li {
@@ -388,6 +402,36 @@ li {
   .maps{
     margin-right: 6.61px;
   }
+.about{
+ color: #707070;
+ 
+}
+.des{
+    font-family: Inter;
+font-weight: 700;
+line-height: 9.59px;
+letter-spacing: -0.02em;
+text-align: left;
+text-underline-position: from-font;
+text-decoration-skip-ink: none;
+color: #707070;
+width: 45px;
+background-color:#F3F3F3;
+padding: 7px;
+}
 .design{
-    
+gap: 6.61px;
+opacity: 0px;
+
+}
+.inf_header{
+    font-family: Inter;
+font-size: 13.21px;
+font-weight: 700;
+line-height: 18.5px;
+letter-spacing: -0.03em;
+text-align: left;
+text-underline-position: from-font;
+text-decoration-skip-ink: none;
+
 }
