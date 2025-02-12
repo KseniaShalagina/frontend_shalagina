@@ -483,4 +483,21 @@ border-radius: 61.02px;
     position: relative;
     z-index: 2;
     background-image: url("/img/sms.svg");
+    background-position: center;
+    background-size: 9px;
+    background-repeat: no-repeat;
+}
+.form_input_tel::before{
+    content: "";
+    height: 28px ;
+    width: 28px;
+    border-radius: 50%;
+    border: 1px solid  #707070;
+    display: flex;
+    position: relative;
+    z-index: 2;
+    background-image: url("/img/call.svg");
+    background-position: center;
+    background-size: 9px;
+    background-repeat: no-repeat;
 }
