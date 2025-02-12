@@ -315,11 +315,13 @@ footer {
     margin-left: 120px;
     margin-right: 120px;
     z-index: -1;
-    
+
 }
-.backgroundd{
+
+.backgroundd {
     position: relative;
 }
+
 .big_card_inf {
     width: 619px;
     margin-left: auto;
@@ -327,7 +329,7 @@ footer {
     padding: 20px 20px 0 20px;
     background-color: white;
     position: absolute;
-    top:86px;
+    top: 86px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -371,7 +373,8 @@ li {
     display: inline;
 }
 
-.about, .design {
+.about,
+.design {
     display: flex;
     flex-direction: row;
     font-family: Inter;
@@ -395,43 +398,89 @@ li {
     padding: 0;
     margin: 0;
 }
+
 .works::before {
-    content: "•"; 
-    margin-right: 5.84px; 
-  }
-  .maps{
+    content: "•";
+    margin-right: 5.84px;
+}
+
+.maps {
     margin-right: 6.61px;
-  }
-.about{
- color: #707070;
- 
+    font-size: 11px;
 }
-.des{
-    font-family: Inter;
-font-weight: 700;
-line-height: 9.59px;
-letter-spacing: -0.02em;
-text-align: left;
-text-underline-position: from-font;
-text-decoration-skip-ink: none;
-color: #707070;
-width: 45px;
-background-color:#F3F3F3;
-padding: 7px;
+
+.works {
+    font-size: 11px;
 }
-.design{
-gap: 6.61px;
-opacity: 0px;
+
+.about {
+    color: #707070;
 
 }
-.inf_header{
-    font-family: Inter;
-font-size: 13.21px;
-font-weight: 700;
-line-height: 18.5px;
-letter-spacing: -0.03em;
-text-align: left;
-text-underline-position: from-font;
-text-decoration-skip-ink: none;
 
+.des {
+    font-family: Inter;
+    font-weight: 700;
+    line-height: 9.59px;
+    letter-spacing: -0.02em;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #707070;
+    width: 45px;
+    background-color: #F3F3F3;
+    padding: 7px;
+    font-size: 11px;
+}
+
+.design {
+    gap: 6.61px;
+    opacity: 0px;
+
+}
+
+.inf_header {
+    font-family: Inter;
+    font-size: 13.21px;
+    font-weight: 700;
+    line-height: 18.5px;
+    letter-spacing: -0.03em;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+
+}
+
+.text_my {
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 13.87px;
+    letter-spacing: 0%;
+    color: #707070;
+
+}
+.form{
+   height:  213.58px;
+    width: 186.66px;
+}
+.imgform{
+    width: 28.070255279541016;
+height: 28.070255279541016;
+gap: 6.1px;
+padding: 9.76px;
+border-width: 0.61px;
+border-radius: 61.02px;
+
+}
+.form_input_em::before{
+    content: "";
+    height: 28px ;
+    width: 28px;
+    border-radius: 50%;
+    border: 1px solid  #707070;
+    display: flex;
+    position: relative;
+    z-index: 2;
+    background-image: url("/img/sms.svg");
 }
