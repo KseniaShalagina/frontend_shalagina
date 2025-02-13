@@ -52,8 +52,8 @@ li {
 .log {
     width: 145px;
     height: 50px;
-    border-style: solid;
     border: 1px;
+    border-style: solid;
     border-color: #E5DEFD;
     background-color: white;
     padding: 14px 49.5px 14px 49.5px;
@@ -448,7 +448,7 @@ li {
     text-align: left;
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
-
+    width: 403px;
 }
 
 .text_my {
@@ -458,6 +458,7 @@ li {
     line-height: 13.87px;
     letter-spacing: 0%;
     color: #707070;
+    width: 403px;
 
 }
 .form{
@@ -500,4 +501,11 @@ border-radius: 61.02px;
     background-position: center;
     background-size: 9px;
     background-repeat: no-repeat;
+}
+.em{
+    font-family: Inter;
+font-weight: 500;
+font-size: 7.32px;
+line-height: 8.86px;
+
 }
