@@ -461,51 +461,151 @@ li {
     width: 403px;
 
 }
-.form{
-   height:  213.58px;
+
+.form {
+    height: 213.58px;
     width: 186.66px;
+    padding: 14px;
+    margin-top: 15px;
+    border: 1px solid #E5E8EB;
 }
-.imgform{
+
+.imgform {
     width: 28.070255279541016;
-height: 28.070255279541016;
-gap: 6.1px;
-padding: 9.76px;
-border-width: 0.61px;
-border-radius: 61.02px;
+    height: 28.070255279541016;
+    gap: 6.1px;
+    padding: 9.76px;
+    border-width: 0.61px;
+    border-radius: 61.02px;
 
 }
-.form_input_em::before{
+
+.form_input_em::before {
     content: "";
-    height: 28px ;
+    display: block;
+    height: 28px;
     width: 28px;
     border-radius: 50%;
-    border: 1px solid  #707070;
+    border: 1px solid #707070;
     display: flex;
-    position: relative;
+    position: absolute;
+    left: 5px;
+    top: 50%;
+    transform: translateY(-50%);
     z-index: 2;
     background-image: url("/img/sms.svg");
     background-position: center;
     background-size: 9px;
     background-repeat: no-repeat;
 }
-.form_input_tel::before{
+
+.form_input_tel::before {
     content: "";
-    height: 28px ;
+    height: 28px;
     width: 28px;
     border-radius: 50%;
-    border: 1px solid  #707070;
+    border: 1px solid #707070;
     display: flex;
-    position: relative;
+    /* position: relative;*/
+    position: absolute;
+    left: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
     z-index: 2;
     background-image: url("/img/call.svg");
     background-position: center;
     background-size: 9px;
     background-repeat: no-repeat;
 }
-.em{
+
+.em {
     font-family: Inter;
-font-weight: 500;
-font-size: 7.32px;
-line-height: 8.86px;
+    font-weight: 500;
+    font-size: 7.32px;
+    line-height: 8.86px;
+    margin-left: 38px;
+
+}
+
+.form_input_em {
+    position: relative;
+    display: block;
+    margin-bottom: 14px;
+}
+
+.form_input_em .em {
+    display: block;
+    margin-bottom: 3px;
+}
+
+.form_input_em input[type="email"] {
+    box-sizing: border-box;
+    margin-left: 38px;
+    width: 77px;
+    height: 12px;
+    border: 1px solid #707070;
+
+}
+
+.tel {
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 7.32px;
+    line-height: 8.86px;
+    margin-left: 38px;
+
+}
+
+.form_input_tel {
+    position: relative;
+    display: block;
+}
+
+.form_input_tel .tel {
+    display: block;
+    margin-bottom: 3px;
+}
+
+.form_input_tel input[type="phone"] {
+    box-sizing: border-box;
+    margin-left: 38px;
+    width: 77px;
+    height: 12px;
+    border: 1px solid #707070;
+
+}
+
+.main_about {
+    display: flex;
+    justify-content: space-between;
+}
+
+.buttRes {
+    width: 184px;
+    height: 31px;
+    padding-top: 8.54px;
+    padding-right: 19.53px;
+    padding-bottom: 8.54px;
+    padding-left: 19.53px;
+    gap: 6.1px;
+    background-color: #3D1EDD;
+    color: white;
+    border: 0;
+    margin-bottom: 10px;
+}
+
+.buttMes {
+    width: 184px;
+    height: 31px;
+    padding-top: 8.54px;
+    padding-right: 19.53px;
+    padding-bottom: 8.54px;
+    padding-left: 19.53px;
+    gap: 6.1px;
+    background-color: white;
+    border: 1px solid  #E5DEFD;
+
+
 
 }
