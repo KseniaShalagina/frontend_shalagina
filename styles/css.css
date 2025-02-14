@@ -463,11 +463,15 @@ li {
 }
 
 .form {
-    height: 213.58px;
+    height: 165px;
     width: 186.66px;
     padding: 14px;
     margin-top: 15px;
     border: 1px solid #E5E8EB;
+    background-color: white;
+    margin-left: 30px;
+    box-shadow:
+    0 5px 10px gray,
 }
 
 .imgform {
@@ -522,7 +526,7 @@ li {
 .em {
     font-family: Inter;
     font-weight: 500;
-    font-size: 7.32px;
+    font-size: 11px;
     line-height: 8.86px;
     margin-left: 38px;
 
@@ -542,7 +546,7 @@ li {
 .form_input_em input[type="email"] {
     box-sizing: border-box;
     margin-left: 38px;
-    width: 77px;
+    width: 120px;
     height: 12px;
     border: 1px solid #707070;
 
@@ -551,7 +555,7 @@ li {
 .tel {
     font-family: Inter;
     font-weight: 500;
-    font-size: 7.32px;
+    font-size: 11px;
     line-height: 8.86px;
     margin-left: 38px;
 
@@ -560,6 +564,7 @@ li {
 .form_input_tel {
     position: relative;
     display: block;
+    margin-bottom: 15px;
 }
 
 .form_input_tel .tel {
@@ -570,7 +575,7 @@ li {
 .form_input_tel input[type="phone"] {
     box-sizing: border-box;
     margin-left: 38px;
-    width: 77px;
+    width: 120px;
     height: 12px;
     border: 1px solid #707070;
 
@@ -604,8 +609,6 @@ li {
     padding-left: 19.53px;
     gap: 6.1px;
     background-color: white;
-    border: 1px solid  #E5DEFD;
-
-
+    border: 1px solid #E5DEFD;
 
 }
