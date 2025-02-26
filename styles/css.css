@@ -1,8 +1,6 @@
-/*body {
-    width: 1440px;
-    margin-left: auto;
-    margin-right: auto;
-}*/
+body {
+    margin: 0;
+}
 
 header {
     height: 100px;
@@ -256,7 +254,7 @@ footer {
     text-align: center;
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
-   }
+}
 
 .black-white-container {
     width: 300px;
@@ -646,47 +644,119 @@ hr {
     font-size: 16px;
     line-height: 24px;
     letter-spacing: -2%;
-    color:  #707070;
+    color: #707070;
     width: 100%;
     text-align: justify;
 }
-.cards{
+
+.cards {
     display: flex;
     justify-content: space-around;
 }
-.connect{
+
+.connect {
     display: flex;
     justify-content: space-around;
     width: 1200px;
     margin: auto;
 
 }
-.fourth_img{
-    width: 400;
-height: 400;
-gap: 10px;
+.fourth_block{
+    margin-bottom: 100px;
 }
-.fourth_txt{
+.fourth_img {
+    width: 400;
+    height: 400;
+    gap: 10px;
+}
+
+.fourth_txt {
     width: 700px;
     margin: 137px;
 }
 
-.prifile{
+.prifile {
     display: flex;
     justify-content: space-between;
     width: 100%;
 }
-.fifth_img{
+
+.fifth_img {
     width: 750px;
-height: 600px;
-top: -0.46px;
-left: 690px;
+    height: 600px;
+    top: -0.46px;
+    left: 690px;
 
 }
-.blok_prifile{
-    background-color:#0C0909;
+
+.blok_prifile {
+    background-color: #0C0909;
     width: 100%;
 }
-.fifth_name{
+
+.fifth_name {
     color: #FFFFFF;
+    font-family: Inter;
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 67.2px;
+    letter-spacing: -3%;
+    margin-bottom: 31px;
+}
+
+.blok_prifile_min {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 193px;
+    width: 496px;
+}
+
+.joins {
+    background-color: #3D1EDD;
+    color: white;
+    width: 145px;
+    height: 50px;
+    border-style: solid;
+    border: 0px;
+    padding: 14px 43px 14px 43px;
+    letter-spacing: -0.02em;
+    margin-right: 16px;
+}
+.foot_infs{
+    display: flex;
+    justify-content: space-between;
+}
+.name_Job{
+    font-family: Inter;
+font-weight: 700;
+font-size: 24px;
+line-height: 28.8px;
+letter-spacing: -3%;
+
+}
+.foot_inf{
+    margin-top: 50px;
+    margin-left: 120px;
+}
+.inf_foot{
+    font-family: Inter;
+font-weight: 700;
+font-size: 16px;
+line-height: 22.4px;
+letter-spacing: -2%;
+color:#080305;
+margin-left: 120px;
+
+}
+.terms{
+    font-family: Inter;
+font-weight: 700;
+font-size: 16px;
+line-height: 22.4px;
+letter-spacing: -2%;
+color:#080305;
+margin-right: 120px;
+}
+@media (max-width: 144px) {
+    
 }
