@@ -778,7 +778,7 @@ hr {
     }
 
     .main_description {
-        margin-left: 10px;
+        margin-left: 30px;
         width: 680px;
     }
 }
@@ -788,5 +788,41 @@ hr {
         font-size: 30px;
         width: 700px;
         margin-left: 10px;
+    }
+}
+@media (max-width:1290px) {
+    .first_img{
+        width: 1000px;
+    }
+    .fon{
+        height: 400px;
+    }
+    .image{
+        margin-bottom: 100px;
+    }
+}
+@media (max-width:1056px) {
+    .first_img{
+        width: 900px;
+    }
+    .fon{
+        height: 380px;
+    }
+    .image{
+        margin-bottom: 0px;
+    }
+    .second_block{
+
+    }
+}
+@media (max-width:985px) {
+    .first_img{
+        width: 700px;
+    }
+    .fon{
+        height: 320px;
+    }
+    .image{
+        height: 500px;
     }
 }
