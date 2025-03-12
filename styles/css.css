@@ -111,8 +111,10 @@ li {
     border: 0px;
     padding: 14px 43px 14px 43px;
     letter-spacing: -0.02em;
-    margin-right: 16px;
+    margin-right: auto;
+    margin-left: auto;
     margin-top: 30px;
+    display: block;
 }
 
 .butj {
@@ -781,13 +783,21 @@ hr {
         margin-left: 30px;
         width: 680px;
     }
+    .first_block{
+        width:845px;
+        height: 270px;
+    }
 }
 
 @media (max-width: 810px) {
     .main_name {
-        font-size: 30px;
+        font-size: 40px;
         width: 700px;
         margin-left: 10px;
+    }
+    .first_block{
+        width: 740px;
+        height: 270px;
     }
 }
 @media (max-width:1290px) {
@@ -800,6 +810,9 @@ hr {
     .image{
         margin-bottom: 100px;
     }
+    .first_block{
+        height: 270px;
+    }
 }
 @media (max-width:1056px) {
     .first_img{
@@ -811,8 +824,8 @@ hr {
     .image{
         margin-bottom: 0px;
     }
-    .second_block{
-
+    .first_block{
+        height: 270px;
     }
 }
 @media (max-width:985px) {
