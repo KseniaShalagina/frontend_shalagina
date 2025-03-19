@@ -871,3 +871,22 @@ hr {
         display: none;
     }
 }
+@media (max-width:1316px) {
+    .fifth_name{
+        font-size: 30px;
+    }
+}
+@media(max-width:1000px){
+.fifth_img{
+    display: none;
+}
+.blok_prifile{
+    margin-top: 0;
+    height: 200px;
+}
+.fourth_block{    
+    margin-bottom: 0px;}
+    .blok_prifile_min{
+        margin-top: 0;
+    }
+}
