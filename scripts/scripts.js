@@ -1,54 +1,44 @@
-'use strict';
-const cards={
-    card_1:{
-        card_name: "Professional Profile",
-        card_text: "We know finding the right job is stressful, so we’ve made it simple. It only takes a few minutes. Create a free portfolio on briefolio to show your best self and getdiscovered by recruiter",
-    },
-    card_2:{
-        card_name: "Best Portfolio",
-        card_text: "We know finding the right job is stressful, so we’ve made it simple. It only takes a few minutes. Create a free portfolio on briefolio to show your best self and getdiscovered by recruiter",
-    },
-    card_3:{
-        card_name: "Powerful Resume",
-        card_text: "We know finding the right job is stressful, so we’ve made it simple. It only takes a few minutes. Create a free portfolio on briefolio to show your best self and getdiscovered by recruiter",
-    },
+const cards = {
+  card_1: {
+    card_name: "Professional Profile",
+    card_text: "We know finding the right job is stressful, so we’ve made it simple. It only takes a few minutes. Create a free portfolio on briefolio to show your best self and getdiscovered by recruiter",
+  },
+  card_2: {
+    card_name: "Best Portfolio",
+    card_text: "We know finding the right job is stressful, so we’ve made it simple. It only takes a few minutes. Create a free portfolio on briefolio to show your best self and getdiscovered by recruiter",
+  },
+  card_3: {
+    card_name: "Powerful Resume",
+    card_text: "We know finding the right job is stressful, so we’ve made it simple. It only takes a few minutes. Create a free portfolio on briefolio to show your best self and getdiscovered by recruiter",
+  },
 }
-function get_cards(cards){
-    return Object.values(cards);
+function showCard(card) {
+  let infCards = document.getElementById("information-cards");
+  console.log(infCards);
+  let newCard = `
+  <div class="card">
+  <button class="cardbutt" onclick="colors(this)"></button>
+  <h2 class="namecard">${card.card_name}</h2>
+  <p class="cardtxt">${card.card_text}</p>
+  </div>
+  `;
+  infCards.innerHTML += newCard;
 }
-function inserting_cards(card){
-    return `
-     <div class="card">
-        <button class="cardbutt"></button>
-        <h2 class="namecard">${card.card_name}</h2>
-        <p class="cardtxt">${card.card_text}</p>
-    </div>
-    `;
+function showAllCards(cards) {
+      const cardArray = Object.values(cards); // Преобразуем объект в массив значений
+      for (let i = 0; i < cardArray.length; i++) {
+          showCard(cardArray[i]);
+      }
 }
-// Функция для рендеринга карточек
-function renderCards(containerSelector, cardsData) {
-    const container = document.querySelector(containerSelector);
-  
-    if (!container) {
-      console.error("Container not found!");
-      return;
-    }
-  
-    // Очищаем контейнер перед добавлением новых карточек
-    container.innerHTML = "";
-  
-    // Создаем HTML для каждой карточки и добавляем в контейнер
-    cardsData.forEach((card) => {
-      const cardHTML = createCardTemplate(card);
-      container.insertAdjacentHTML("beforeend", cardHTML);
-    });
-  }
-  
-  // Инициализация после загрузки DOM
-  document.addEventListener("DOMContentLoaded", () => {
-    const cardsData = getCardsData(cards);
-    renderCards(".cards", cardsData);
-  });
+showAllCards(cards);
+//кнопки
+let a;
+function colors(el) {
+  const t = "that"
+  if (a && a != el) a.classList.remove(t)
 
+  if (!el.className.includes(t)) el.classList.add(t)
+  else el.classList.remove(t)
 
-
+  a = el
+}

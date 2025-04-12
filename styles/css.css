@@ -625,10 +625,14 @@ hr {
 .cardbutt {
     width: 367px;
     height: 6px;
-    background: #3D1EDD;
+    background: #F3F3F3;
     border-radius: 0;
     border: 0;
 }
+.that{
+    background-color: #3D1EDD;;
+}
+
 
 .namecard {
     height: 29px;
@@ -660,6 +664,7 @@ hr {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
+    margin-top: 50px;
 }
 
 .connect {
