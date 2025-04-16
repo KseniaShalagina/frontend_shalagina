@@ -53,3 +53,11 @@ slidesPerView: 1,
 }
 
 );
+
+//Форма регистрации
+function closeBackdrop(el, ev) {
+  if (el == ev.target) el.classList.add("off1")
+}
+function openBackdrop() {
+  document.getElementsByClassName("backdrop")[0].classList.remove("off1")
+}

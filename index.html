@@ -34,7 +34,7 @@
             <p class="main_description"> This is the place to show yourself and land entry level jobs at cutting-edge
                 companies. Launch your career here.</p>
             
-            <button class="join"> Join Now</button>  
+            <button class="join" onclick="openBackdrop()"> Join Now</button>  
             <p class="text_button">Looking for candidate’s? <span class="blue"><b> Hire now </b></span></p>
         </section>
         <section class="image">
@@ -179,7 +179,9 @@
                 <p class="terms"> <b>Terms and Conditions · Privacy Policy </b></p>
             </div>
         </div>
+        <div class="backdrop off1" onclick="closeBackdrop(this, event)"></div>
         <form class="form_click">
+            <h1 class="form_name">Registration form</h1>
             <div class="field-area">
                 <input class="input-area" type="text" placeholder="Your name" require>
                 <input class="input-area" type="email" placeholder="Email Address" require>
@@ -190,6 +192,7 @@
         </div>
 
         </form>
+    </div>
     </footer>
     <script src="scripts/swiper-bundle.min.js"> </script>
     <script src="scripts/scripts.js"></script>
