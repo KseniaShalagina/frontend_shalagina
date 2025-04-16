@@ -42,3 +42,14 @@ function colors(el) {
 
   a = el
 }
+const swiper = new Swiper('.swiper', 
+  {
+loop:true,
+autoplay: {     //add
+  delay: 0,   //add
+},
+speed: 3000,          //add
+slidesPerView: 1,
+}
+
+);
