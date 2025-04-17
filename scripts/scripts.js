@@ -25,10 +25,10 @@ function showCard(card) {
   infCards.innerHTML += newCard;
 }
 function showAllCards(cards) {
-      const cardArray = Object.values(cards); // Преобразуем объект в массив значений
-      for (let i = 0; i < cardArray.length; i++) {
-          showCard(cardArray[i]);
-      }
+  const cardArray = Object.values(cards); // Преобразуем объект в массив значений
+  for (let i = 0; i < cardArray.length; i++) {
+    showCard(cardArray[i]);
+  }
 }
 showAllCards(cards);
 //кнопки
@@ -42,22 +42,24 @@ function colors(el) {
 
   a = el
 }
-const swiper = new Swiper('.swiper', 
+const swiper = new Swiper('.swiper',
   {
-loop:true,
-autoplay: {     //add
-  delay: 0,   //add
-},
-speed: 3000,          //add
-slidesPerView: 1,
-}
+    loop: true,
+    autoplay: {     //add
+      delay: 0,   //add
+    },
+    speed: 3000,          //add
+    slidesPerView: 1,
+  }
 
 );
 
 //Форма регистрации
 function closeBackdrop(el, ev) {
   if (el == ev.target) el.classList.add("off1")
+  document.documentElement.style.overflow = "auto"
 }
 function openBackdrop() {
-  document.getElementsByClassName("backdrop")[0].classList.remove("off1")
+  document.getElementsByClassName("backdrop")[0].classList.remove("off1");
+  document.documentElement.style.overflow = "hidden"
 }
