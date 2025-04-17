@@ -629,8 +629,10 @@ hr {
     border-radius: 0;
     border: 0;
 }
-.that{
-    background-color: #3D1EDD;;
+
+.that {
+    background-color: #3D1EDD;
+    ;
 }
 
 
@@ -791,8 +793,9 @@ hr {
         margin-left: 30px;
         width: 680px;
     }
-    .first_block{
-        width:845px;
+
+    .first_block {
+        width: 845px;
         height: 270px;
     }
 }
@@ -803,118 +806,148 @@ hr {
         width: 700px;
         margin-left: 10px;
     }
-    .first_block{
+
+    .first_block {
         width: 740px;
         height: 270px;
     }
 }
+
 @media (max-width:1290px) {
-    .first_img{
+    .first_img {
         width: 1000px;
     }
-    .fon{
+
+    .fon {
         height: 400px;
     }
-    .image{
+
+    .image {
         margin-bottom: 100px;
     }
-    .first_block{
+
+    .first_block {
         height: 270px;
     }
 }
+
 @media (max-width:1056px) {
-    .first_img{
+    .first_img {
         width: 900px;
     }
-    .fon{
+
+    .fon {
         height: 380px;
     }
-    .image{
+
+    .image {
         margin-bottom: 0px;
     }
-    .first_block{
+
+    .first_block {
         height: 270px;
     }
-    .second_block ,.name_blok1{
-        width:900px;
+
+    .second_block,
+    .name_blok1 {
+        width: 900px;
     }
 }
+
 @media (max-width:985px) {
-    .first_img{
+    .first_img {
         width: 700px;
     }
-    .fon{
+
+    .fon {
         height: 320px;
     }
-    .image{
+
+    .image {
         height: 500px;
     }
 }
+
 @media (max-width:985px) {
-    .name_blok1, .second_block{
+
+    .name_blok1,
+    .second_block {
         width: 700px;
     }
 }
-@media(max-width:1300px){
-    .third_blok{
+
+@media(max-width:1300px) {
+    .third_blok {
         margin-bottom: 0;
     }
-.fourth_img{
-    width: 300px;
-    margin-left: 10px;
+
+    .fourth_img {
+        width: 300px;
+        margin-left: 10px;
+    }
+
+    .fourth_txt {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .connect {
+        width: 100%;
+    }
 }
-.fourth_txt{
-    margin-left: 20px;
-    margin-right: 20px;
-}
-.connect{
-    width: 100%;
-}
-}
+
 @media (max-width:886px) {
-    .terms{
+    .terms {
         display: none;
     }
 }
+
 @media (max-width:1316px) {
-    .fifth_name{
+    .fifth_name {
         font-size: 30px;
     }
 }
-@media(max-width:1000px){
-.fifth_img{
-    display: none;
-}
-.blok_prifile{
-    margin-top: 0;
-    height: 200px;
-}
-.fourth_block{    
-    margin-bottom: 0px;}
-    .blok_prifile_min{
+
+@media(max-width:1000px) {
+    .fifth_img {
+        display: none;
+    }
+
+    .blok_prifile {
+        margin-top: 0;
+        height: 200px;
+    }
+
+    .fourth_block {
+        margin-bottom: 0px;
+    }
+
+    .blok_prifile_min {
         margin-top: 0;
     }
 }
-.form_click{
+
+.form_click {
     width: 280px;
     height: 320px;
-    border: 1px solid;
-    border-color: grey;
-    padding: 10px;
+    border: 2px solid;
+    border-color: #3D1EDD;
+    padding: 15px;
     border-radius: 30px;
+    background-color: white;
+    margin: auto;
 }
-.input-area{
+
+.input-area {
     height: 35px;
     border-radius: 30px;
     border: 1px solid;
     width: 100%;
     margin-bottom: 15px;
-    border-color: grey;
+    border-color: #3D1EDD;
 }
-.form_click{
-    background-color: #E5DEFD;
-}
-.form_button{
+
+.form_button {
     height: 35px;
     border-radius: 30px;
     border: 1px solid;
@@ -922,12 +955,41 @@ hr {
     background-color: #3D1EDD;
     color: white;
     border-color: #3D1EDD;
-   
+
 }
-.form_buttons{ margin-top: 30px;
-display: flex;
-flex-direction: column;}
-.form_name{
+
+.form_buttons {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form_name {
     text-align: center;
     font-weight: normal;
 }
+
+.off1 {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.backdrop {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    transition: .2s;
+}
+
+/*body { overflow: hidden; }*/
+.modal-open {
+    overflow: hidden;
+    }
+
