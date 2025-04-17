@@ -63,3 +63,26 @@ function openBackdrop() {
   document.getElementsByClassName("backdrop")[0].classList.remove("off1");
   document.documentElement.style.overflow = "hidden"
 }
+//Пролоадер
+/*document.addEventListener('DOMContentLoaded', () => { // Настраиваем обработку события загрузки контента
+  setTimeout(() => {
+    const preloader = document.querySelector('.spinner'); // Находим наш элемент
+    preloader.innerHTML = ''; // Производим действия, возможно другие
+  }, 500);
+});*/
+document.addEventListener('DOMContentLoaded', () => {
+  setTimeout(() => {
+    const preloader = document.getElementById('preloader');
+    
+    // Плавное исчезновение прелоадера
+    preloader.style.opacity = '0';
+    preloader.style.transition = 'opacity 0.5s ease';
+    
+    // Удаление после завершения анимации
+    preloader.addEventListener('transitionend', () => {
+      preloader.remove();
+    });
+    
+  }, 1500); // Увеличил время до 1.5 секунд для демонстрации анимации
+});
+
