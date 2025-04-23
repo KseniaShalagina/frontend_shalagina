@@ -1,4 +1,4 @@
-const cards = {
+/*const cards = {
   card_1: {
     card_name: "Professional Profile",
     card_text: "We know finding the right job is stressful, so we’ve made it simple. It only takes a few minutes. Create a free portfolio on briefolio to show your best self and getdiscovered by recruiter",
@@ -11,7 +11,7 @@ const cards = {
     card_name: "Powerful Resume",
     card_text: "We know finding the right job is stressful, so we’ve made it simple. It only takes a few minutes. Create a free portfolio on briefolio to show your best self and getdiscovered by recruiter",
   },
-}
+}*/
 function showCard(card) {
   let infCards = document.getElementById("information-cards");
   console.log(infCards);
@@ -30,7 +30,6 @@ function showAllCards(cards) {
     showCard(cardArray[i]);
   }
 }
-showAllCards(cards);
 //кнопки
 let a;
 function colors(el) {
@@ -42,13 +41,14 @@ function colors(el) {
 
   a = el
 }
+//слайдер
 const swiper = new Swiper('.swiper',
   {
     loop: true,
-    autoplay: {     //add
-      delay: 0,   //add
+    autoplay: {   
+      delay: 0,   
     },
-    speed: 3000,          //add
+    speed: 3000,     
     slidesPerView: 1,
   }
 
@@ -66,17 +66,27 @@ function openBackdrop() {
 //Пролоадер
 document.addEventListener('DOMContentLoaded', () => {
   setTimeout(() => {
-      const spinner = document.querySelector('.spinner');
-      
-      preloader.style.opacity = '0';
-      
-      preloader.addEventListener('transitionend', () => {
-          preloader.style.display = 'none';
-          document.body.classList.add('content-loaded');
-      });
-      
-      spinner.innerHTML = '';
+    const spinner = document.querySelector('.spinner');
+
+    preloader.style.opacity = '0';
+
+    preloader.addEventListener('transitionend', () => {
+      preloader.style.display = 'none';
+      document.body.classList.add('content-loaded');
+    });
+
+    spinner.innerHTML = '';
   }, 2000);
 });
 
+//Задание 3
+fetch('https://jsonplaceholder.typicode.com/comments?_limit=3')
+  .then(response =>  response.json())
+  .then(json => {
+    const cards =json.map((comment, index) => ({
+      card_name: `Comment ${index + 1}`,
+      card_text: comment.body,
+    }));
+    showAllCards(cards);
+  })
 
