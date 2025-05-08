@@ -12,9 +12,9 @@
     card_text: "We know finding the right job is stressful, so we’ve made it simple. It only takes a few minutes. Create a free portfolio on briefolio to show your best self and getdiscovered by recruiter",
   },
 }*/
-function showCard(card) {
+/*function showCard(card) {
   let infCards = document.getElementById("information-cards");
-  console.log(infCards);
+  //console.log(infCards);
   let newCard = `
   <div class="card">
   <button class="cardbutt" onclick="colors(this)"></button>
@@ -29,7 +29,7 @@ function showAllCards(cards) {
   for (let i = 0; i < cardArray.length; i++) {
     showCard(cardArray[i]);
   }
-}
+}*/
 //кнопки
 let a;
 function colors(el) {
@@ -80,7 +80,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 //Задание 3
-fetch('https://jsonplaceholder.typicode.com/comments?_limit=3')
+/*fetch('https://jsonplaceholder.typicode.com/comments?_limit=3')
   .then(response =>  response.json())
   .then(json => {
     const cards =json.map((comment, index) => ({
@@ -88,5 +88,5 @@ fetch('https://jsonplaceholder.typicode.com/comments?_limit=3')
       card_text: comment.body,
     }));
     showAllCards(cards);
-  })
+  })*/
 
