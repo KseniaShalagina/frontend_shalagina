@@ -16,7 +16,6 @@ function showCard(card: Card):void {
 }
 
 function showAllCards(cards: Card[]):void {
- // const cardArray = Object.values(cards); // Преобразуем объект в массив значений
   for (let i = 0; i < cards.length; i++) {
     showCard(cards[i]);
   }
